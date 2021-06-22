@@ -8,6 +8,7 @@ allprojects {
 }
 
 buildscript {
+    val kotlin_version by extra("1.5.10")
     repositories {
         gradlePluginPortal()
         jcenter()

@@ -2,8 +2,6 @@ plugins {
     kotlin("multiplatform")
 }
 
-version = "unspecified"
-
 repositories {
     mavenCentral()
 }
