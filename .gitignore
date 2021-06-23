@@ -2,3 +2,8 @@
 .idea/
 .gradle
 gradle/
+.gradle/
+domain/build
+server/build
+android-sample/build
+ui/build
