@@ -1,5 +1,5 @@
 package com.example.domain
 
 object Main {
-    fun test(): String = "12345"
+    fun testDomain(): String = "12345"
 }

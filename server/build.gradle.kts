@@ -8,13 +8,15 @@ plugins {
     kotlin("plugin.jpa") version "1.5.10"
 }
 
-group = "com.example"
-version = "0.0.1-SNAPSHOT"
-java.sourceCompatibility = JavaVersion.VERSION_11
 
-repositories {
-    mavenCentral()
+kotlin {
+    java {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
 }
+
+
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jdbc")
@@ -26,6 +28,8 @@ dependencies {
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     runtimeOnly("com.h2database:h2")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+    implementation(project(":domain"))
+
 }
 
 tasks.withType<KotlinCompile> {
